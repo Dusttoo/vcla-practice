@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCLA Mastery Challenge - Interactive Study App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏆 VCLA Mastery Challenge</h1>
+            <div class="subtitle">Interactive Study Application</div>
+            <div class="challenge-badge">⚡ ADAPTIVE LEARNING ⚡</div>
+        </div>
+        
+        <div class="controls">
+            <div class="difficulty-selector">
+                <label for="difficultySelect">Difficulty Level:</label>
+                <select id="difficultySelect" onchange="changeDifficulty()">
+                    <option value="all">All Levels</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="expert">Expert</option>
+                </select>
+            </div>
+            <div class="topic-selector">
+                <label for="topicSelect">Focus Topic:</label>
+                <select id="topicSelect" onchange="changeTopic()">
+                    <option value="all">All Topics</option>
+                    <option value="pronoun-agreement">Pronoun Agreement</option>
+                    <option value="modifier-placement">Modifier Placement</option>
+                    <option value="sentence-combining">Sentence Combining</option>
+                    <option value="subject-verb">Subject-Verb Agreement</option>
+                    <option value="parallel-structure">Parallel Structure</option>
+                    <option value="comma-usage">Comma Usage</option>
+                </select>
+            </div>
+            <button id="shuffleBtn" onclick="shuffleQuestions()" class="control-btn">🔀 Shuffle</button>
+            <button id="resetBtn" onclick="resetSession()" class="control-btn">🔄 Reset</button>
+        </div>
+        
+        <div class="stats-board">
+            <div class="stat-card">
+                <span class="stat-value" id="score">0/0</span>
+                <div class="stat-label">Score</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="streak">0 🔥</span>
+                <div class="stat-label">Streak</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="accuracy">0%</span>
+                <div class="stat-label">Accuracy</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="timeSpent">0 left</span>
+                <div class="stat-label">Remaining</div>
+            </div>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress" style="width: 0%">
+                    <div class="progress-text" id="progressText">0% Complete</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="questionContainer" class="question-container">
+            <div id="questionContent"></div>
+        </div>
+        
+        <div class="navigation">
+            <button id="prevBtn" onclick="previousQuestion()" class="nav-btn" style="display: none;">← Previous</button>
+            <button id="nextBtn" onclick="nextQuestion()" class="nav-btn" style="display: none;">Next →</button>
+            <button id="startBtn" onclick="startSession()" class="start-btn">Start Practice Session</button>
+        </div>
+        
+        <div id="completion" class="completion-screen" style="display: none;">
+            <h2>🎉 Session Complete!</h2>
+            <div id="finalStats"></div>
+            <div class="completion-actions">
+                <button onclick="reviewMissedQuestions()" class="action-btn">📝 Review Missed</button>
+                <button onclick="startSession()" class="action-btn">🔄 Practice Again</button>
+                <button onclick="exportResults()" class="action-btn">📊 Export Results</button>
+            </div>
+        </div>
+        
+        <div id="reviewMode" class="review-container" style="display: none;">
+            <h3>📝 Review Missed Questions</h3>
+            <div id="reviewContent"></div>
+            <button onclick="exitReview()" class="control-btn">Exit Review</button>
+        </div>
+    </div>
+    
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
