@@ -13,7 +13,8 @@ const questionBank = [
       "Each of the students should bring its own calculator to the exam.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because 'each' is a singular indefinite pronoun that requires a singular pronoun. 'His or her' is the appropriate singular form, while 'their' is plural and doesn't agree with the singular antecedent 'each.'",
+    reasoning:
+      "Option B is correct because 'each' is a singular indefinite pronoun that requires a singular pronoun. 'His or her' is the appropriate singular form, while 'their' is plural and doesn't agree with the singular antecedent 'each.'",
     explanation: {
       title: "Pronoun-Antecedent Agreement",
       steps: [
@@ -61,7 +62,8 @@ const questionBank = [
       "The fire alarm, walking down the hallway, suddenly started ringing.",
     ],
     correct: 2,
-    reasoning: "Option C is correct because the person doing the walking (I) immediately follows the participial phrase 'Walking down the hallway.' This prevents the dangling modifier error that occurs when the fire alarm appears to be doing the walking.",
+    reasoning:
+      "Option C is correct because the person doing the walking (I) immediately follows the participial phrase 'Walking down the hallway.' This prevents the dangling modifier error that occurs when the fire alarm appears to be doing the walking.",
     explanation: {
       title: "Dangling Modifier Detection",
       steps: [
@@ -111,7 +113,8 @@ const questionBank = [
       "In 1952, the library was built to serve over 50,000 residents in the surrounding area, and it offers many programs.",
     ],
     correct: 1,
-    reasoning: "Option B is the most effective combination because it uses a participial phrase ('Built in 1952') to eliminate wordiness, combines related ideas efficiently ('area residents'), and creates one concise sentence instead of four choppy ones, reducing the word count significantly.",
+    reasoning:
+      "Option B is the most effective combination because it uses a participial phrase ('Built in 1952') to eliminate wordiness, combines related ideas efficiently ('area residents'), and creates one concise sentence instead of four choppy ones, reducing the word count significantly.",
     explanation: {
       title: "Sentence Combining Mastery",
       steps: [
@@ -152,7 +155,8 @@ const questionBank = [
       "The groups of students, along with their teacher, is planning a field trip.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because the true subject is 'group' (singular), not 'students.' The phrase 'along with their teacher' is an interrupting phrase that doesn't change the subject, so we use the singular verb 'is' to agree with 'group.'",
+    reasoning:
+      "Option B is correct because the true subject is 'group' (singular), not 'students.' The phrase 'along with their teacher' is an interrupting phrase that doesn't change the subject, so we use the singular verb 'is' to agree with 'group.'",
     explanation: {
       title: "Subject-Verb Agreement Traps",
       steps: [
@@ -199,7 +203,8 @@ const questionBank = [
       "She enjoys reading, to write, and painting in her free time.",
     ],
     correct: 1,
-    reasoning: "Option B maintains parallel structure by using three gerunds (-ing forms) in the series: 'reading, writing, and painting.' All items follow the same grammatical pattern, while the other options mix gerunds with infinitives, breaking parallelism.",
+    reasoning:
+      "Option B maintains parallel structure by using three gerunds (-ing forms) in the series: 'reading, writing, and painting.' All items follow the same grammatical pattern, while the other options mix gerunds with infinitives, breaking parallelism.",
     explanation: {
       title: "Parallel Structure Mastery",
       steps: [
@@ -240,7 +245,8 @@ const questionBank = [
       "Before leaving, the house I always check that I have my keys, wallet, and phone.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because it properly places a comma after the introductory phrase 'Before leaving the house' and uses commas to separate all items in the series, including the Oxford comma before 'and phone.'",
+    reasoning:
+      "Option B is correct because it properly places a comma after the introductory phrase 'Before leaving the house' and uses commas to separate all items in the series, including the Oxford comma before 'and phone.'",
     explanation: {
       title: "Comma Usage Rules",
       steps: [
@@ -281,7 +287,8 @@ const questionBank = [
       "Every student must bring it's textbook to class.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because 'every student' is singular, requiring the singular pronoun form 'his or her.' The word 'every' always takes singular pronouns, making 'their' (plural) incorrect in formal writing.",
+    reasoning:
+      "Option B is correct because 'every student' is singular, requiring the singular pronoun form 'his or her.' The word 'every' always takes singular pronouns, making 'their' (plural) incorrect in formal writing.",
     explanation: {
       title: "Basic Pronoun Agreement",
       steps: [
@@ -321,7 +328,8 @@ const questionBank = [
       "Sarah barely caught running quickly the bus.",
     ],
     correct: 2,
-    reasoning: "Option C correctly places the modifier by having Sarah (the person who is running) immediately follow the phrase 'Running quickly.' This makes it clear who is performing the action described by the modifier.",
+    reasoning:
+      "Option C correctly places the modifier by having Sarah (the person who is running) immediately follow the phrase 'Running quickly.' This makes it clear who is performing the action described by the modifier.",
     explanation: {
       title: "Basic Modifier Placement",
       steps: [
@@ -360,7 +368,8 @@ const questionBank = [
       "Neither Sarah nor Maria brought she lunch today.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because with 'neither...nor' constructions, the pronoun agrees with the noun closest to it. Since 'Maria' is closest and is feminine singular, we use 'her' rather than 'their' (plural).",
+    reasoning:
+      "Option B is correct because with 'neither...nor' constructions, the pronoun agrees with the noun closest to it. Since 'Maria' is closest and is feminine singular, we use 'her' rather than 'their' (plural).",
     explanation: {
       title: "Neither/Nor Pronoun Agreement",
       steps: [
@@ -401,7 +410,8 @@ const questionBank = [
       "The committee will announce it's decision tomorrow.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because 'committee' is a collective noun that acts as a single unit. Collective nouns take singular pronouns ('its'), not plural ones ('their'), when the group is acting together as one entity.",
+    reasoning:
+      "Option B is correct because 'committee' is a collective noun that acts as a single unit. Collective nouns take singular pronouns ('its'), not plural ones ('their'), when the group is acting together as one entity.",
     explanation: {
       title: "Collective Noun Pronoun Agreement",
       steps: [
@@ -443,7 +453,8 @@ const questionBank = [
       "Anyone who wants to join the team should submit they application by Friday.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because 'anyone' is a singular indefinite pronoun that requires a singular pronoun reference. In formal writing, 'his or her' is the standard singular form, though 'their' is becoming more accepted in informal contexts.",
+    reasoning:
+      "Option B is correct because 'anyone' is a singular indefinite pronoun that requires a singular pronoun reference. In formal writing, 'his or her' is the standard singular form, though 'their' is becoming more accepted in informal contexts.",
     explanation: {
       title: "Indefinite Pronoun Agreement",
       steps: [
@@ -486,7 +497,8 @@ const questionBank = [
       "I spilled driving to work coffee all over my shirt.",
     ],
     correct: 2,
-    reasoning: "Option C is correct because 'I' (the person driving) immediately follows the participial phrase 'Driving to work.' This prevents the illogical interpretation that the coffee was driving, creating a clear and grammatically correct sentence.",
+    reasoning:
+      "Option C is correct because 'I' (the person driving) immediately follows the participial phrase 'Driving to work.' This prevents the illogical interpretation that the coffee was driving, creating a clear and grammatically correct sentence.",
     explanation: {
       title: "Participial Phrase Placement",
       steps: [
@@ -526,7 +538,8 @@ const questionBank = [
       "Jennifer found having studied all night the test easy.",
     ],
     correct: 2,
-    reasoning: "Option C is correct because Jennifer (the person who studied) immediately follows the phrase 'Having studied all night.' This creates a logical connection between the modifier and the person performing the action, avoiding the dangling modifier error.",
+    reasoning:
+      "Option C is correct because Jennifer (the person who studied) immediately follows the phrase 'Having studied all night.' This creates a logical connection between the modifier and the person performing the action, avoiding the dangling modifier error.",
     explanation: {
       title: "Dangling Modifier Correction",
       steps: [
@@ -568,7 +581,8 @@ const questionBank = [
       "The books on the shelf needing to be organized.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because the subject 'books' is plural, requiring the plural verb 'need.' The prepositional phrase 'on the shelf' doesn't affect the subject-verb agreement and should be ignored when determining the correct verb form.",
+    reasoning:
+      "Option B is correct because the subject 'books' is plural, requiring the plural verb 'need.' The prepositional phrase 'on the shelf' doesn't affect the subject-verb agreement and should be ignored when determining the correct verb form.",
     explanation: {
       title: "Basic Subject-Verb Agreement",
       steps: [
@@ -608,7 +622,8 @@ const questionBank = [
       "Either the manager or the employee are responsible for the mistake.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because with 'either...or' constructions, the verb agrees with the subject closest to it. Since 'employees' (plural) is closest to the verb, we use the plural verb 'are.'",
+    reasoning:
+      "Option B is correct because with 'either...or' constructions, the verb agrees with the subject closest to it. Since 'employees' (plural) is closest to the verb, we use the plural verb 'are.'",
     explanation: {
       title: "Either/Or Agreement Rule",
       steps: [
@@ -647,7 +662,8 @@ const questionBank = [
       "The number of students in the class have been increasing each year.",
     ],
     correct: 2,
-    reasoning: "Option C is correct because 'the number' refers to a specific quantity as a single concept, making it singular and requiring the singular verb 'is.' This is different from 'a number of,' which would be plural.",
+    reasoning:
+      "Option C is correct because 'the number' refers to a specific quantity as a single concept, making it singular and requiring the singular verb 'is.' This is different from 'a number of,' which would be plural.",
     explanation: {
       title: "Number vs. A Number Agreement",
       steps: [
@@ -690,7 +706,8 @@ const questionBank = [
       "She likes to swim, to run, and bike riding.",
     ],
     correct: 2,
-    reasoning: "Option C maintains parallel structure by using consistent gerund forms (-ing) for all three activities: 'swimming, running, and bike riding.' This creates a balanced, grammatically correct list structure.",
+    reasoning:
+      "Option C maintains parallel structure by using consistent gerund forms (-ing) for all three activities: 'swimming, running, and bike riding.' This creates a balanced, grammatically correct list structure.",
     explanation: {
       title: "Parallel Structure in Lists",
       steps: [
@@ -731,7 +748,8 @@ const questionBank = [
       "The job requires that you pay attention to detail, work well with others, and being punctual.",
     ],
     correct: 1,
-    reasoning: "Option B maintains parallel structure by using three noun phrases: 'attention to detail,' 'the ability to work well with others,' and 'punctuality.' All items follow the same grammatical pattern as objects of the verb 'requires.'",
+    reasoning:
+      "Option B maintains parallel structure by using three noun phrases: 'attention to detail,' 'the ability to work well with others,' and 'punctuality.' All items follow the same grammatical pattern as objects of the verb 'requires.'",
     explanation: {
       title: "Parallel Structure with Noun Phrases",
       steps: [
@@ -771,7 +789,8 @@ const questionBank = [
       "The new policy will be reducing costs, improve efficiency, and increase customer satisfaction.",
     ],
     correct: 1,
-    reasoning: "Option B maintains parallel structure by using three base verbs that the policy 'will' perform: 'reduce,' 'improve,' and 'increase.' This keeps the same subject (policy) and verb structure throughout the series.",
+    reasoning:
+      "Option B maintains parallel structure by using three base verbs that the policy 'will' perform: 'reduce,' 'improve,' and 'increase.' This keeps the same subject (policy) and verb structure throughout the series.",
     explanation: {
       title: "Complex Parallel Structure",
       steps: [
@@ -812,7 +831,8 @@ const questionBank = [
       "My favorite colors are blue green, and yellow.",
     ],
     correct: 1,
-    reasoning: "Option B correctly uses commas to separate items in a series, including the Oxford comma before 'and yellow.' This standard punctuation pattern clearly separates the three colors and prevents potential confusion.",
+    reasoning:
+      "Option B correctly uses commas to separate items in a series, including the Oxford comma before 'and yellow.' This standard punctuation pattern clearly separates the three colors and prevents potential confusion.",
     explanation: {
       title: "Series Comma Usage",
       steps: [
@@ -852,7 +872,8 @@ const questionBank = [
       "Although, it was raining we decided to go hiking.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because when a dependent clause begins a sentence, it should be followed by a comma before the independent clause. 'Although it was raining' is dependent and needs the comma after it.",
+    reasoning:
+      "Option B is correct because when a dependent clause begins a sentence, it should be followed by a comma before the independent clause. 'Although it was raining' is dependent and needs the comma after it.",
     explanation: {
       title: "Dependent Clause Comma Rule",
       steps: [
@@ -893,7 +914,8 @@ const questionBank = [
       "My brother, who lives in Texas is visiting next week.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because 'who lives in Texas' is nonrestrictive information (assuming you have only one brother). Nonrestrictive clauses require commas on both sides to set off the additional, non-essential information.",
+    reasoning:
+      "Option B is correct because 'who lives in Texas' is nonrestrictive information (assuming you have only one brother). Nonrestrictive clauses require commas on both sides to set off the additional, non-essential information.",
     explanation: {
       title: "Restrictive vs. Nonrestrictive Clauses",
       steps: [
@@ -936,7 +958,8 @@ const questionBank = [
       "Because the storm was severe, it knocked out power lines, and the power lines served the entire neighborhood, so many residents were without electricity for hours.",
     ],
     correct: 1,
-    reasoning: "Option B effectively combines the sentences by using a participial phrase ('The severe storm'), creating a clear cause-and-effect relationship, and using a participial phrase ('leaving residents') to show the result, all while eliminating unnecessary words.",
+    reasoning:
+      "Option B effectively combines the sentences by using a participial phrase ('The severe storm'), creating a clear cause-and-effect relationship, and using a participial phrase ('leaving residents') to show the result, all while eliminating unnecessary words.",
     explanation: {
       title: "Effective Sentence Combining",
       steps: [
@@ -979,7 +1002,8 @@ const questionBank = [
       "Maria, who studied medicine in college and graduated with honors, decided to become a pediatrician, and she loves working with children.",
     ],
     correct: 1,
-    reasoning: "Option B uses effective subordination with 'After' to show time sequence and 'because of' to show motivation. This creates logical relationships between ideas while maintaining conciseness and avoiding choppy construction.",
+    reasoning:
+      "Option B uses effective subordination with 'After' to show time sequence and 'because of' to show motivation. This creates logical relationships between ideas while maintaining conciseness and avoiding choppy construction.",
     explanation: {
       title: "Advanced Sentence Combining",
       steps: [
@@ -1020,7 +1044,8 @@ const questionBank = [
       "we visited the Grand Canyon last Summer.",
     ],
     correct: 1,
-    reasoning: "Option B correctly capitalizes the first word of the sentence ('We') and the proper noun ('Grand Canyon'), while keeping 'summer' lowercase since seasons are not capitalized unless they begin a sentence.",
+    reasoning:
+      "Option B correctly capitalizes the first word of the sentence ('We') and the proper noun ('Grand Canyon'), while keeping 'summer' lowercase since seasons are not capitalized unless they begin a sentence.",
     explanation: {
       title: "Capitalization Rules",
       steps: [
@@ -1059,7 +1084,8 @@ const questionBank = [
       "The students books were left in the teachers' lounge.",
     ],
     correct: 0,
-    reasoning: "Option A correctly uses apostrophes for possession: 'student's' (singular possessive) for one student's books, and 'teachers'' (plural possessive) for the lounge belonging to multiple teachers. The word 'books' is simply plural, not possessive.",
+    reasoning:
+      "Option A correctly uses apostrophes for possession: 'student's' (singular possessive) for one student's books, and 'teachers'' (plural possessive) for the lounge belonging to multiple teachers. The word 'books' is simply plural, not possessive.",
     explanation: {
       title: "Apostrophe Usage Rules",
       steps: [
@@ -1098,7 +1124,8 @@ const questionBank = [
       "The conference will address three topics: climate change; renewable energy; and sustainable development.",
     ],
     correct: 0,
-    reasoning: "Option A correctly uses a colon after a complete statement to introduce the list, then uses simple commas to separate the three topics. Colons are appropriate for introducing lists, while semicolons are not needed for simple series.",
+    reasoning:
+      "Option A correctly uses a colon after a complete statement to introduce the list, then uses simple commas to separate the three topics. Colons are appropriate for introducing lists, while semicolons are not needed for simple series.",
     explanation: {
       title: "Colon vs. Semicolon Usage",
       steps: [
@@ -1139,7 +1166,8 @@ const questionBank = [
       "The medicine had know effect on my headache.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because 'effect' is the noun form meaning 'a result or consequence.' The sentence needs a noun after 'no,' and the medicine had no result/consequence on the headache. 'Affect' is the verb form.",
+    reasoning:
+      "Option B is correct because 'effect' is the noun form meaning 'a result or consequence.' The sentence needs a noun after 'no,' and the medicine had no result/consequence on the headache. 'Affect' is the verb form.",
     explanation: {
       title: "Effect vs. Affect",
       steps: [
@@ -1178,7 +1206,8 @@ const questionBank = [
       "I couldn't care fewer about what he thinks.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because 'couldn't care less' logically means you care zero amount, which is the intended meaning. 'Could care less' actually implies you do care some amount, making it illogical for expressing complete indifference.",
+    reasoning:
+      "Option B is correct because 'couldn't care less' logically means you care zero amount, which is the intended meaning. 'Could care less' actually implies you do care some amount, making it illogical for expressing complete indifference.",
     explanation: {
       title: "Common Usage Errors",
       steps: [
@@ -1217,7 +1246,8 @@ const questionBank = [
       "The number of student in each class should not exceed twenty.",
     ],
     correct: 1,
-    reasoning: "Option B is correct because 'number' is used with countable nouns like students. Since you can count individual students, use 'number of students.' 'Amount' is reserved for uncountable nouns like water, money, or time.",
+    reasoning:
+      "Option B is correct because 'number' is used with countable nouns like students. Since you can count individual students, use 'number of students.' 'Amount' is reserved for uncountable nouns like water, money, or time.",
     explanation: {
       title: "Amount vs. Number",
       steps: [
@@ -1318,4 +1348,587 @@ addNewQuestion({
 
 // Expanded VCLA Question Database - Add these to your existing questions.js file
 
-// Add these questions to your questionBank array:
+const additionalQuestions = [
+  {
+    id: 31,
+    topic: "mechanics",
+    difficulty: "easy",
+    type: "multiple-choice",
+    question: "Which sentence uses apostrophes correctly?",
+    choices: [
+      "The teachers lounge is near the students' lockers.",
+      "The teacher's lounge is near the students lockers.",
+      "The teachers' lounge is near the students' lockers.",
+      "The teachers lounge is near the student's lockers.",
+    ],
+    correct: 2,
+    reasoning:
+      "Option C is correct: plural possessive 'teachers\\'' (lounge for multiple teachers) and plural possessive 'students\\'' (lockers belonging to many students).",
+    explanation: {
+      title: "Apostrophes for Singular vs. Plural Possession",
+      steps: [
+        {
+          number: 1,
+          title: "Find the owners",
+          content:
+            "Lounge of teachers; lockers of students → both plural owners.",
+          type: "thinking",
+        },
+        {
+          number: 2,
+          title: "Form plural possessive",
+          content:
+            "Plural nouns ending in s take apostrophe after s: teachers' / students'.",
+          type: "correct",
+        },
+        {
+          number: 3,
+          title: "Why others fail",
+          content:
+            "A: missing apostrophe before lounge; B: 'students' needs apostrophe; D: 'student\\'s' is singular while lockers are many.",
+          type: "mistake",
+        },
+      ],
+    },
+  },
+  {
+    id: 32,
+    topic: "mechanics",
+    difficulty: "medium",
+    type: "multiple-choice",
+    question: "Choose the sentence that corrects the comma splice:",
+    choices: [
+      "The meeting ended, everyone left quickly.",
+      "The meeting ended; everyone left quickly.",
+      "The meeting ended everyone left quickly.",
+      "The meeting ended, and everyone left quickly.",
+    ],
+    correct: 1,
+    reasoning:
+      "Options B and D both fix the splice; D uses a comma + coordinating conjunction, but the most concise correction with proper punctuation is B (semicolon).",
+    explanation: {
+      title: "Fixing Comma Splices",
+      steps: [
+        {
+          number: 1,
+          title: "Spot two independent clauses",
+          content:
+            "'The meeting ended' + 'everyone left quickly' are complete thoughts.",
+          type: "thinking",
+        },
+        {
+          number: 2,
+          title: "Acceptable fixes",
+          content: "Use a semicolon (B) or comma + FANBOYS (D).",
+          type: "correct",
+        },
+        {
+          number: 3,
+          title: "Eliminate errors",
+          content: "A is a splice; C is a run-on without needed punctuation.",
+          type: "mistake",
+        },
+      ],
+    },
+  },
+  {
+    id: 33,
+    topic: "word-usage",
+    difficulty: "medium",
+    type: "multiple-choice",
+    question: "Select the sentence that uses who/whom correctly:",
+    choices: [
+      "Who did you give the notes to?",
+      "Whom is leading the workshop today?",
+      "To whom did you give the notes?",
+      "Who did you give the notes?",
+    ],
+    correct: 2,
+    reasoning:
+      "'To whom' is the object of the preposition 'to.' The subject form 'who' is required only when the pronoun functions as the subject of the verb.",
+    explanation: {
+      title: "Who vs. Whom",
+      steps: [
+        {
+          number: 1,
+          title: "Subject or object?",
+          content:
+            "Ask: Is the pronoun doing the action (subject) or receiving it (object)?",
+          type: "thinking",
+        },
+        {
+          number: 2,
+          title: "Apply the rule",
+          content:
+            "Object → 'whom,' especially after a preposition: 'to whom.'",
+          type: "correct",
+        },
+        {
+          number: 3,
+          title: "Common errors",
+          content:
+            "A & D improperly place 'who' as object; B uses 'whom' as subject of 'is leading.'",
+          type: "mistake",
+        },
+      ],
+    },
+  },
+  {
+    id: 34,
+    topic: "word-usage",
+    difficulty: "easy",
+    type: "multiple-choice",
+    question: "Which sentence uses fewer/less correctly?",
+    choices: [
+      "There were less errors on the second draft.",
+      "Fewer people attended the meeting this week.",
+      "I drank fewer water after the run.",
+      "The store had fewer milk than yesterday.",
+    ],
+    correct: 1,
+    reasoning:
+      "Use 'fewer' with countable nouns. 'People' is countable, so 'Fewer people' is correct.",
+    explanation: {
+      title: "Fewer vs. Less",
+      steps: [
+        {
+          number: 1,
+          title: "Countable vs. uncountable",
+          content:
+            "Use 'fewer' for countables (cars, people); 'less' for mass nouns (water, milk).",
+          type: "correct",
+        },
+        {
+          number: 2,
+          title: "Why others fail",
+          content:
+            "A: 'errors' (countable) → 'fewer.' C & D: 'water/milk' are mass nouns → 'less.'",
+          type: "mistake",
+        },
+      ],
+    },
+  },
+  {
+    id: 35,
+    topic: "word-usage",
+    difficulty: "easy",
+    type: "multiple-choice",
+    question: "Choose the sentence with correct use of among/between:",
+    choices: [
+      "We divided the prizes between the five winners.",
+      "The discussion is among the two co-chairs.",
+      "Negotiations between the three departments resumed.",
+      "We split the bill among the four of us.",
+    ],
+    correct: 3,
+    reasoning:
+      "Use 'between' with two; 'among' with three or more. Splitting a bill among four is correct.",
+    explanation: {
+      title: "Between vs. Among",
+      steps: [
+        {
+          number: 1,
+          title: "Identify the number",
+          content: "Two → between; three+ → among (general rule).",
+          type: "thinking",
+        },
+        {
+          number: 2,
+          title: "Apply",
+          content: "D has four people → among.",
+          type: "correct",
+        },
+        {
+          number: 3,
+          title: "Why others fail",
+          content:
+            "A uses 'between' for five; B uses 'among' for two; C uses 'between' for three.",
+          type: "mistake",
+        },
+      ],
+    },
+  },
+  {
+    id: 36,
+    topic: "verb-tense",
+    difficulty: "medium",
+    type: "multiple-choice",
+    question: "Which sentence maintains consistent verb tense?",
+    choices: [
+      "She enters the lab, took notes, and begins the trial.",
+      "She entered the lab, takes notes, and begins the trial.",
+      "She entered the lab, took notes, and began the trial.",
+      "She had entered the lab, takes notes, and began the trial.",
+    ],
+    correct: 2,
+    reasoning: "Option C keeps past tense consistently across all verbs.",
+    explanation: {
+      title: "Verb Tense Consistency",
+      steps: [
+        {
+          number: 1,
+          title: "Scan verbs",
+          content: "entered / took / began → all past.",
+          type: "correct",
+        },
+        {
+          number: 2,
+          title: "Detect shifts",
+          content:
+            "A, B, D shift between present/past or past perfect without need.",
+          type: "mistake",
+        },
+      ],
+    },
+  },
+  {
+    id: 37,
+    topic: "pronoun-reference",
+    difficulty: "hard",
+    type: "multiple-choice",
+    question: "Which sentence avoids ambiguous pronoun reference?",
+    choices: [
+      "When Alex spoke to Jordan about their paper, he got confused.",
+      "When the teacher met with the student, she clarified the rubric.",
+      "If you place the binder on the shelf, it might break it.",
+      "Sam told Lee that they should revise his thesis statement.",
+    ],
+    correct: 1,
+    reasoning:
+      "In B, 'she' clearly refers to 'the teacher.' The others have unclear or conflicting antecedents.",
+    explanation: {
+      title: "Clear Pronoun Antecedents",
+      steps: [
+        {
+          number: 1,
+          title: "Find the pronoun",
+          content: "Identify 'she/they/it/he' and ask: Who exactly?",
+          type: "thinking",
+        },
+        {
+          number: 2,
+          title: "Choose clarity",
+          content:
+            "B has an unambiguous antecedent; A, C, D are unclear or contradictory.",
+          type: "correct",
+        },
+      ],
+    },
+  },
+  {
+    id: 38,
+    topic: "modifier-placement",
+    difficulty: "medium",
+    type: "multiple-choice",
+    question: "Which sentence places the modifier correctly?",
+    choices: [
+      "Driving to school, the rain drenched Maya's jacket.",
+      "While driving to school, Maya's jacket was drenched by the rain.",
+      "While Maya was driving to school, the rain drenched her jacket.",
+      "Driving to school, Maya's jacket got drenched.",
+    ],
+    correct: 2,
+    reasoning:
+      "Option C states the logical subject ('Maya') with the driving action and avoids a dangling modifier.",
+    explanation: {
+      title: "Avoiding Dangling Modifiers",
+      steps: [
+        {
+          number: 1,
+          title: "Identify the modifier phrase",
+          content: "'While driving to school' must modify the person driving.",
+          type: "thinking",
+        },
+        {
+          number: 2,
+          title: "Place near the doer",
+          content: "C makes 'Maya' the driver, then describes the result.",
+          type: "correct",
+        },
+      ],
+    },
+  },
+  {
+    id: 39,
+    topic: "organization",
+    difficulty: "medium",
+    type: "multiple-choice",
+    question:
+      "A paragraph explains that reusable bottles reduce waste, save money, and keep drinks cold longer. Which sentence would be the best concluding sentence?",
+    choices: [
+      "Bottled water sales have increased every year since 2010.",
+      "For these reasons, choosing a reusable bottle is a simple way to help both your wallet and the planet.",
+      "Some reusable bottles are made of metal, and others are made of plastic.",
+      "The first reusable bottle was invented long before single-use bottles existed.",
+    ],
+    correct: 1,
+    reasoning:
+      "Option B synthesizes the paragraph's points and provides a clear, persuasive takeaway.",
+    explanation: {
+      title: "Writing Effective Conclusions",
+      steps: [
+        {
+          number: 1,
+          title: "Synthesize, don't introduce",
+          content: "Conclusions restate and unify key benefits.",
+          type: "correct",
+        },
+        {
+          number: 2,
+          title: "Why others fail",
+          content:
+            "A adds unrelated stats; C adds a minor detail; D adds history off-topic.",
+          type: "mistake",
+        },
+      ],
+    },
+  },
+  {
+    id: 40,
+    topic: "cohesion",
+    difficulty: "hard",
+    type: "multiple-choice",
+    question:
+      "Which transition best completes the sentence? 'Attendance dropped in June; _____, the committee postponed the workshop to August.'",
+    choices: ["however", "therefore", "for example", "meanwhile"],
+    correct: 1,
+    reasoning:
+      "A cause–effect relationship is implied; 'therefore' signals a logical result.",
+    explanation: {
+      title: "Choosing Logical Transitions",
+      steps: [
+        {
+          number: 1,
+          title: "Identify relationship",
+          content: "Drop in attendance → decision to postpone = result.",
+          type: "thinking",
+        },
+        {
+          number: 2,
+          title: "Match the connector",
+          content: "'Therefore' communicates consequence.",
+          type: "correct",
+        },
+        {
+          number: 3,
+          title: "Eliminate",
+          content:
+            "'However' contrasts; 'for example' illustrates; 'meanwhile' indicates time.",
+          type: "mistake",
+        },
+      ],
+    },
+  },
+  {
+    id: 41,
+    topic: "sentence-combining",
+    difficulty: "easy",
+    type: "sentence-combining",
+    question:
+      "Combine most effectively: 'The museum opened in 1925. It houses over 10,000 artifacts. It offers tours daily.'",
+    choices: [
+      "The museum opened in 1925, and it houses over 10,000 artifacts, and it offers tours daily.",
+      "Opened in 1925, the museum houses over 10,000 artifacts and offers daily tours.",
+      "The museum, which opened in 1925, and houses over 10,000 artifacts, offers tours daily.",
+      "The museum opened in 1925 and it houses over 10,000 artifacts, offering tours daily.",
+    ],
+    correct: 1,
+    reasoning:
+      "Option B is concise and uses a participial phrase to reduce repetition while preserving meaning.",
+    explanation: {
+      title: "Effective Concision",
+      steps: [
+        {
+          number: 1,
+          title: "Remove repetition",
+          content: "Avoid repeating subjects/verbs unnecessarily.",
+          type: "thinking",
+        },
+        {
+          number: 2,
+          title: "Prefer compact structures",
+          content: "Participial phrase + coordinated verbs.",
+          type: "correct",
+        },
+      ],
+    },
+  },
+  {
+    id: 42,
+    topic: "comma-usage",
+    difficulty: "medium",
+    type: "multiple-choice",
+    question:
+      "Which sentence uses commas correctly with a nonrestrictive clause?",
+    choices: [
+      "My sister who lives in Norfolk is visiting tomorrow.",
+      "My sister, who lives in Norfolk is visiting tomorrow.",
+      "My sister who lives in Norfolk, is visiting tomorrow.",
+      "My sister, who lives in Norfolk, is visiting tomorrow.",
+    ],
+    correct: 3,
+    reasoning:
+      "Assuming there is one sister, 'who lives in Norfolk' is nonessential and requires commas on both sides.",
+    explanation: {
+      title: "Restrictive vs. Nonrestrictive",
+      steps: [
+        {
+          number: 1,
+          title: "Determine essentiality",
+          content: "If the clause merely adds info, set it off with commas.",
+          type: "thinking",
+        },
+        {
+          number: 2,
+          title: "Apply punctuation",
+          content: "Place commas before and after the nonrestrictive clause.",
+          type: "correct",
+        },
+      ],
+    },
+  },
+  {
+    id: 43,
+    topic: "mechanics",
+    difficulty: "easy",
+    type: "multiple-choice",
+    question: "Which sentence has correct capitalization?",
+    choices: [
+      'Professor Martinez assigned "The Great gatsby" last Spring.',
+      "Professor martinez assigned 'the Great Gatsby' last spring.",
+      'Professor Martinez assigned "The Great Gatsby" last spring.',
+      "professor Martinez assigned " + '"The Great Gatsby" last Spring.',
+    ],
+    correct: 2,
+    reasoning:
+      "Capitalize titles, names, and the first word of a sentence; seasons are lowercase unless personified or at sentence start.",
+    explanation: {
+      title: "Capitalization Basics",
+      steps: [
+        {
+          number: 1,
+          title: "Proper nouns & titles",
+          content: "Capitalize names and major words in book titles.",
+          type: "correct",
+        },
+        {
+          number: 2,
+          title: "Seasons",
+          content: "'spring' is lowercase in general use.",
+          type: "tip",
+        },
+      ],
+    },
+  },
+  {
+    id: 44,
+    topic: "parallel-structure",
+    difficulty: "hard",
+    type: "multiple-choice",
+    question:
+      'Choose the sentence with correct "not only... but also" parallelism:',
+    choices: [
+      "The policy not only reduces costs but also increasing efficiency.",
+      "The policy not only reduces costs but also improves efficiency.",
+      "Not only the policy reduces costs but also improves efficiency.",
+      "The policy reduces not only costs but also is improving efficiency.",
+    ],
+    correct: 1,
+    reasoning: "Both verb phrases must be parallel: 'reduces' / 'improves.'",
+    explanation: {
+      title: "Correlative Conjunctions",
+      steps: [
+        {
+          number: 1,
+          title: "Match structures",
+          content: "Keep the same grammatical form after each correlative.",
+          type: "correct",
+        },
+        {
+          number: 2,
+          title: "Eliminate mismatches",
+          content: "A and D mix forms; C misplaces 'not only.'",
+          type: "mistake",
+        },
+      ],
+    },
+  },
+  {
+    id: 45,
+    topic: "subject-verb",
+    difficulty: "medium",
+    type: "multiple-choice",
+    question: "Select the sentence with correct subject–verb agreement:",
+    choices: [
+      "The team were celebrating its victory late into the night.",
+      "The committee have submitted its recommendations.",
+      "The staff is meeting to discuss their options.",
+      "The data are convincing and support the hypothesis.",
+    ],
+    correct: 3,
+    reasoning:
+      "In formal American English, 'data' is often treated as plural in scientific contexts ('data are'). The others mismatch collective nouns and pronouns/verbs.",
+    explanation: {
+      title: "Agreement with Collective & Plural Nouns",
+      steps: [
+        {
+          number: 1,
+          title: "Identify the noun type",
+          content:
+            "Collective nouns (team/committee/staff) usually take singular verbs when acting as a unit.",
+          type: "thinking",
+        },
+        {
+          number: 2,
+          title: "Check pronouns",
+          content: "Singular collective → 'its' not 'their.'",
+          type: "tip",
+        },
+        {
+          number: 3,
+          title: "Apply exception",
+          content: "'Data' as plural in academic usage → 'are.'",
+          type: "correct",
+        },
+      ],
+    },
+  },
+  {
+    id: 46,
+    topic: "rhetoric",
+    difficulty: "medium",
+    type: "multiple-choice",
+    question:
+      "A paragraph outlines the history of a community garden and ends by inviting volunteers to join. What is the writer's primary purpose?",
+    choices: [
+      "to narrate a personal anecdote",
+      "to persuade readers to participate",
+      "to analyze competing policies",
+      "to critique prior leadership",
+    ],
+    correct: 1,
+    reasoning:
+      "The invitation suggests a persuasive purpose—encouraging readers to take action.",
+    explanation: {
+      title: "Identifying Purpose",
+      steps: [
+        {
+          number: 1,
+          title: "Look at the call to action",
+          content: "Invitations/requests typically signal persuasion.",
+          type: "correct",
+        },
+        {
+          number: 2,
+          title: "Eliminate mismatches",
+          content:
+            "No personal story, policy analysis, or critique is described.",
+          type: "mistake",
+        },
+      ],
+    },
+  },
+];
+
+// Merge with the existing bank
+questionBank.push(...additionalQuestions);
