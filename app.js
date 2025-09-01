@@ -10,6 +10,7 @@ class VCLAStudyApp {
         this.sessionActive = false;
         this.currentDifficulty = 'all';
         this.currentTopic = 'all';
+        this.questionCount = 10;
         
         this.initializeApp();
     }
@@ -17,6 +18,8 @@ class VCLAStudyApp {
     initializeApp() {
         this.updateStats();
         this.showWelcomeScreen();
+        // Initialize question count options
+        setTimeout(() => updateAvailableQuestions(), 100);
     }
     
     showWelcomeScreen() {
@@ -124,15 +127,30 @@ class VCLAStudyApp {
         this.currentQuestionIndex = 0;
         
         // Get filtered questions
-        this.currentQuestions = this.getFilteredQuestions();
+        const availableQuestions = this.getFilteredQuestions();
         
-        if (this.currentQuestions.length === 0) {
+        if (availableQuestions.length === 0) {
             alert('No questions match your current filters. Please adjust your selections.');
             return;
         }
         
-        // Shuffle questions
-        this.currentQuestions = shuffleArray(this.currentQuestions);
+        // Get question count from selector
+        const questionCountSelect = document.getElementById('questionCountSelect');
+        const selectedCount = questionCountSelect.value;
+        
+        // Shuffle all available questions first
+        const shuffledQuestions = shuffleArray(availableQuestions);
+        
+        // Select the specified number of questions
+        if (selectedCount === 'all') {
+            this.currentQuestions = shuffledQuestions;
+        } else {
+            const count = parseInt(selectedCount);
+            this.currentQuestions = shuffledQuestions.slice(0, Math.min(count, shuffledQuestions.length));
+        }
+        
+        // Show info about selected questions
+        this.showSessionInfo();
         
         this.updateStats();
         this.displayCurrentQuestion();
@@ -140,6 +158,108 @@ class VCLAStudyApp {
         // Show navigation
         document.getElementById('startBtn').style.display = 'none';
         this.updateNavigation();
+    }
+    
+    showSessionInfo() {
+        const difficulty = this.currentDifficulty === 'all' ? 'All Levels' : this.formatDifficulty(this.currentDifficulty);
+        const topic = this.currentTopic === 'all' ? 'All Topics' : this.formatTopicName(this.currentTopic);
+        const count = this.currentQuestions.length;
+        
+        // Create session info display
+        const sessionInfo = document.createElement('div');
+        sessionInfo.id = 'sessionInfo';
+        sessionInfo.className = 'session-info fade-in';
+        sessionInfo.innerHTML = `
+            <div class="session-info-content">
+                <h3>🚀 Session Started!</h3>
+                <div class="session-details">
+                    <div class="session-detail">
+                        <strong>Questions:</strong> ${count}
+                    </div>
+                    <div class="session-detail">
+                        <strong>Difficulty:</strong> ${difficulty}
+                    </div>
+                    <div class="session-detail">
+                        <strong>Topic:</strong> ${topic}
+                    </div>
+                </div>
+                <p class="session-message">Good luck! Take your time and learn from each explanation.</p>
+            </div>
+        `;
+        
+        // Insert before question container
+        const container = document.querySelector('.container');
+        const questionContainer = document.getElementById('questionContainer');
+        container.insertBefore(sessionInfo, questionContainer);
+        
+        // Remove after 4 seconds
+        setTimeout(() => {
+            if (sessionInfo && sessionInfo.parentNode) {
+                sessionInfo.remove();
+            }
+        }, 4000);
+        
+        // Add session info styles
+        this.addSessionInfoStyles();
+    }
+    
+    formatDifficulty(difficulty) {
+        return difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
+    }
+    
+    addSessionInfoStyles() {
+        const style = document.createElement('style');
+        style.textContent = `
+            .session-info {
+                background: linear-gradient(45deg, #48bb78 0%, #38a169 100%);
+                color: white;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 20px 0;
+                text-align: center;
+                border: 2px solid rgba(255, 255, 255, 0.2);
+            }
+            
+            .session-info-content h3 {
+                color: white;
+                margin-bottom: 15px;
+                font-size: 1.4em;
+            }
+            
+            .session-details {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                margin: 15px 0;
+            }
+            
+            .session-detail {
+                background: rgba(255, 255, 255, 0.2);
+                padding: 8px 16px;
+                border-radius: 6px;
+                font-size: 0.95em;
+            }
+            
+            .session-message {
+                margin: 15px 0 5px 0;
+                font-style: italic;
+                opacity: 0.9;
+            }
+            
+            @media (max-width: 768px) {
+                .session-details {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                
+                .session-detail {
+                    margin: 0 auto;
+                    width: fit-content;
+                }
+            }
+        `;
+        document.head.appendChild(style);
     }
     
     getFilteredQuestions() {
@@ -263,7 +383,15 @@ class VCLAStudyApp {
             `;
         });
         
+        const reasoningHtml = question.reasoning ? `
+            <div class="reasoning-section">
+                <div class="reasoning-header">💡 Why This Answer is Correct</div>
+                <div class="reasoning-content">${question.reasoning}</div>
+            </div>
+        ` : '';
+
         return `
+            ${reasoningHtml}
             <div class="step-header">🎯 ${question.explanation.title}</div>
             ${stepsHtml}
         `;
@@ -286,7 +414,9 @@ class VCLAStudyApp {
             'sentence-combining': '🔵',
             'subject-verb': '🟢',
             'parallel-structure': '🟡',
-            'comma-usage': '🟠'
+            'comma-usage': '🟠',
+            'mechanics': '🔧',
+            'word-usage': '💭'
         };
         return icons[topic] || '📝';
     }
@@ -315,10 +445,6 @@ class VCLAStudyApp {
         
         const accuracy = this.totalAnswered > 0 ? Math.round((this.score / this.totalAnswered) * 100) : 0;
         document.getElementById('accuracy').textContent = `${accuracy}%`;
-        
-        // Update questions remaining
-        const remaining = this.currentQuestions.length - this.currentQuestionIndex - 1;
-        document.getElementById('timeSpent').textContent = `${remaining} left`;
     }
     
     updateProgress() {
@@ -680,8 +806,21 @@ class VCLAStudyApp {
         this.missedQuestions = [];
         this.currentQuestionIndex = 0;
         
-        // Get filtered questions and shuffle
-        this.currentQuestions = shuffleArray(this.getFilteredQuestions());
+        // Get filtered questions and shuffle  
+        const availableQuestions = this.getFilteredQuestions();
+        const shuffledQuestions = shuffleArray(availableQuestions);
+        
+        // Get question count from selector
+        const questionCountSelect = document.getElementById('questionCountSelect');
+        const selectedCount = questionCountSelect.value;
+        
+        // Select the specified number of questions
+        if (selectedCount === 'all') {
+            this.currentQuestions = shuffledQuestions;
+        } else {
+            const count = parseInt(selectedCount);
+            this.currentQuestions = shuffledQuestions.slice(0, Math.min(count, shuffledQuestions.length));
+        }
         
         // Show question container
         document.getElementById('questionContainer').style.display = 'block';
@@ -842,11 +981,80 @@ class VCLAStudyApp {
 function changeDifficulty() {
     const select = document.getElementById('difficultySelect');
     app.currentDifficulty = select.value;
+    updateAvailableQuestions();
 }
 
 function changeTopic() {
     const select = document.getElementById('topicSelect');
     app.currentTopic = select.value;
+    updateAvailableQuestions();
+}
+
+function changeQuestionCount() {
+    const select = document.getElementById('questionCountSelect');
+    app.questionCount = select.value;
+    updateAvailableQuestions();
+}
+
+function updateAvailableQuestions() {
+    // Update the welcome screen with current filter info
+    if (!app.sessionActive) {
+        const availableQuestions = app.getFilteredQuestions();
+        const questionCountSelect = document.getElementById('questionCountSelect');
+        const selectedCount = questionCountSelect.value;
+        
+        // Update question count options based on available questions
+        updateQuestionCountOptions(availableQuestions.length);
+        
+        // Show available questions count in welcome screen
+        updateWelcomeScreen(availableQuestions.length, selectedCount);
+    }
+}
+
+function updateQuestionCountOptions(availableCount) {
+    const select = document.getElementById('questionCountSelect');
+    const currentValue = select.value;
+    
+    // Clear existing options except for "all"
+    select.innerHTML = '';
+    
+    // Add options based on available questions
+    const counts = [5, 10, 15, 20];
+    counts.forEach(count => {
+        if (count <= availableCount) {
+            const option = document.createElement('option');
+            option.value = count;
+            option.textContent = `${count} Questions`;
+            select.appendChild(option);
+        }
+    });
+    
+    // Always add "all" option
+    const allOption = document.createElement('option');
+    allOption.value = 'all';
+    allOption.textContent = `All Available (${availableCount})`;
+    select.appendChild(allOption);
+    
+    // Restore previous selection if still valid
+    if ([...select.options].some(option => option.value === currentValue)) {
+        select.value = currentValue;
+    } else {
+        // Default to 10 or all if less than 10 available
+        select.value = availableCount >= 10 ? '10' : 'all';
+    }
+}
+
+function updateWelcomeScreen(availableCount, selectedCount) {
+    const container = document.getElementById('questionContainer');
+    if (container.querySelector('.welcome-screen')) {
+        const countDisplay = selectedCount === 'all' ? availableCount : Math.min(parseInt(selectedCount), availableCount);
+        
+        // Update the quick stats
+        const statNumbers = container.querySelectorAll('.stat-number');
+        if (statNumbers.length >= 1) {
+            statNumbers[0].textContent = countDisplay; // Total Questions stat
+        }
+    }
 }
 
 function startSession() {

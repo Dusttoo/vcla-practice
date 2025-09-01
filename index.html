@@ -35,6 +35,18 @@
                     <option value="subject-verb">Subject-Verb Agreement</option>
                     <option value="parallel-structure">Parallel Structure</option>
                     <option value="comma-usage">Comma Usage</option>
+                    <option value="mechanics">Mechanics</option>
+                    <option value="word-usage">Word Usage</option>
+                </select>
+            </div>
+            <div class="question-count-selector">
+                <label for="questionCountSelect">Number of Questions:</label>
+                <select id="questionCountSelect" onchange="changeQuestionCount()">
+                    <option value="5">5 Questions</option>
+                    <option value="10" selected>10 Questions</option>
+                    <option value="15">15 Questions</option>
+                    <option value="20">20 Questions</option>
+                    <option value="all">All Available</option>
                 </select>
             </div>
             <button id="shuffleBtn" onclick="shuffleQuestions()" class="control-btn">🔀 Shuffle</button>
@@ -53,10 +65,6 @@
             <div class="stat-card">
                 <span class="stat-value" id="accuracy">0%</span>
                 <div class="stat-label">Accuracy</div>
-            </div>
-            <div class="stat-card">
-                <span class="stat-value" id="timeSpent">0 left</span>
-                <div class="stat-label">Remaining</div>
             </div>
         </div>
         
